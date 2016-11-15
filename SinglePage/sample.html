@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div id="result"></div>
+
+
+    <form name="FirstPage" class="form-login"  method="post" />
+    <input name="email" type="email" id="email" required="" placeholder="Email" /><br>
+    <input name="password" type="password" required="" placeholder="Password" /><br>
+
+    <!--var storedValue = localStorage.getItem("email");-->
+
+    <button onclick="store()" type="button">StoreEmail</button>
+
+    <script  type="text/javascript">
+
+        function store(){
+
+
+            var inputEmail= document.getElementById("email");
+            localStorage.setItem("email", inputEmail.value);
+
+            console.log(localStorage);
+            alert(localStorage.email);
+            var x=localStorage.getItem("email");
+            console.log( localStorage.email);
+
+            document.getElementsByName('email').Value = x;
+        }
+        window.onload = function() {
+
+
+
+            var name = localStorage.getItem(email);
+            alert(window.localStorage.email);
+
+            if (name !== null) $('#inputName').val(name);
+        }
+
+        /*var x=localStorage.getItem("");
+        console.log(x);*/
+
+
+
+
+    </script>
+
+
+
+</form>
+
+</body>
+</html>

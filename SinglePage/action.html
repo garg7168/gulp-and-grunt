@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<link data-require="bootstrap-css" data-semver="4.0.0-alpha.4" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" />
+<link data-require="bootstrap@*" data-semver="3.0.0" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+<script src="app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        #content_menu{
+            margin-left: 425px ;
+        }
+        #content_form{
+            margin-left: 450px ;
+        }
+    </style>
+</head>
+<body id="content_form">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid" id =content_menu>
+         <div class="navbar-header" id="content_grocimg">
+             <img src="Capgemini.jpg"width="500px" height="100px" alt="Capgemini"></br>
+          </div>
+          <a class="navbar-brand" href="#"></a>
+      </div>
+    </nav>
+    <h1>Your Form Data has been received successfully</h1><br>
+    <img src="Basketball.gif"width="100px" height="100px" alt="Capgemini"></br><br>
+    <h1>Employee Details</h1>
+    Name:<input type="text" name="name"  ng-init="form.name"><br><br>
+    Age:<input type="number" name ="age"  ng-init="form.age"><br><br>
+    <!--Gender:<br><input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br><br>-->
+
+    KIN ID:<input type="text" name="kinid" ng-init="Home.kind" ><br><br>
+
+    Date of Joining:<input type="date" name="doj"ng-init="Home.doj" ><br><br>
+
+    Location:<input type="text" name="location"ng-init="Home.location" ><br><br>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp"ng-controller="myCtrl">
+<link data-require="bootstrap-css" data-semver="4.0.0-alpha.4" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" />
+<link data-require="bootstrap@*" data-semver="3.0.0" rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+>
+<!--<script src="angular.js"></script>-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+<script src="app.js"></script>
+<script src="Disable.js"></script>
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <style>
+
+        #content_menu{
+            margin-left: 425px ;
+        }
+        #content_form{
+            margin-left: 450px ;
+        }
+     </style>
+</head>
+
+<body >
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid" id =content_menu>
+             <div class="navbar-header" id="content_grocimg">
+              <img src="Capgemini.jpg"width="500px" height="100px" alt="Capgemini"></br>
+              </div>
+              <a class="navbar-brand" href="#"></a>
+         </div>
+     </nav>
+    <a ui-sref="about">About</a>
+    <a ui-sref="index">Index</a>
+    <div ui-view>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
+
+

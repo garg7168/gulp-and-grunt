@@ -1,0 +1,18 @@
+<form name ="form"  id="content_form" method="get" ng-submit="show()">
+    <div>
+
+        <h1>Employee Details</h1>
+        Name:<input type="text" name="name" placeholder="Type your name here" ng-model="Ename"required onKeyup="checkform()"><br><br>
+        Age:<input type="text" name ="age" placeholder="Type your age here" ng-model="Eage" onKeyup="checkform()"><br><br>
+        Gender:<br><input type="radio" name="gender" value="male"ng-model="EGender" checked> Male<br>
+        <input type="radio" name="gender" value="female"ng-model="EGender"> Female<br><br>
+        KIN ID:<input type="text" name="kinid" placeholder="Type your KIN ID here" ng-model="Ekinid" required onKeyup="checkform()"><br><br>
+        Date of Joining:<input type="date" name="doj" placeholder="Type your DOJ here"ng-model="Edoj" required onKeyup="checkform()"><br><br>
+        Location:<input type="text" name="location" placeholder="Type your location here" ng-model="Elocation" required onKeyup="checkform()"><br><br>
+
+        <input id="submitbutton" type="submit" disabled="disabled" value="Submit">
+        {{myUrl}}<br><br>
+        {{message}}<br>
+    </div>
+    <br>
+</form>
